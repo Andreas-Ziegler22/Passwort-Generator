@@ -48,6 +48,14 @@ h2 {
   word-wrap: break-word;
   max-width: calc(100% - 40px);
 }
+.result-container .btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  height: 40px;
+  width: 40px;
+  font-size: 20px;
+}
 
 .btn {
   border: none;
