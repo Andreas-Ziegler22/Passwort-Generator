@@ -1,3 +1,10 @@
+const randomFunc = {
+  lower: getRandomLowerCase,
+  upper: getRandomUpperCase,
+  number: getRandomNumber,
+  symbol: getRandomSymbol,
+};
+
 function getRandomLowerCase() {
   return String.fromCharCode(Math.floor(Math.random() * 26) + 97);
 }
