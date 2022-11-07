@@ -14,6 +14,17 @@ const randomFunc = {
   symbol: getRandomSymbol,
 };
 
+clipboardEL.addEventListener("click", () => {
+  const textarea = document.createElement("textarea");
+  const password = resultEL.innerText;
+
+  if (!password) {
+    return;
+  }
+  navigator.clipboard.writeText(password);
+  alert("Password copied to clipboard!");
+});
+
 generateEl.addEventListener("click", () => {
   const length = +lengthEl.value; // + sign transform into number instead of String
   const hasUpper = uppercaseEl.checked;
